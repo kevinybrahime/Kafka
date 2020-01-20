@@ -1,5 +1,5 @@
 # Kafka
-Nous avons suivi exactement le Tuto d'Open Classroom
+Après avoir rencontré des difficultés nous avons suivi le tuto openClassroom de kafka
 
 Dans un premier, nous allons voir le format des données qu'on le récupère à l'aide de cette commande : 
 Grace à cette commande, nous avons la possibilité de voir les différentes données collectées à chaque station différente. 
