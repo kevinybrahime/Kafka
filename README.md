@@ -13,13 +13,12 @@ On peut avoir le nombre d'emplacements pour stationner son vélo ainsi que le no
 On lance notre cluster:
 
 C:\Apache\kafka_2.12-2.3.1\bin\zookeeper-server-start.sh ./config/zookeeper.properties
-
 C:\Apache\kafka_2.12-2.3.1\bin\kafka-server-start.sh ./config/server.properties
-
-C:\Apache\kafka_2.12-2.3.1\bin\kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic velib-stations
-
-
+C:\Apache\kafka_2.12-2.3.1\bin\kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 10 --topic velib-stations
 On peut donc lancer notre producer par la suite
 python ./velib-get-stations.py
 
+Pour visualiser les fluctuations du nombre d'emplacements libres pour chaque station :
+python ./velib-monitor-stations.py
 
+C:\Apache\kafka_2.12-2.3.1\bin\kafka-configs.sh --zookeeper localhost:2181 --entity-type topics --entity-name velib-stations --alter --add-config retention.ms=2000
