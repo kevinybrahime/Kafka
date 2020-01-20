@@ -6,11 +6,9 @@ Grace à cette commande, nous avons la possibilité de voir les différentes don
 
 curl https://api.jcdecaux.com/vls/v1/stations?apiKey=c56f0238cb88278094194fc982df9ee29f68f6b2 | python -m json.tool
 
-On peut avoir le nombre d'emplacements pour stationner son vélo ainsi que le nombre de vélo disponible ou encore les données de la position de la station. 
+![alt text](https://github.com/kevinybrahime/Kafka/blob/master/Json.png)
 
-Pour pouvoir 
-curl https://api.jcdecaux.com/vls/v1/stations?apiKey=c56f0238cb88278094194fc982df9ee29f68f6b2 | python -m json.tool
-la base que l'on va utiliser
+On peut avoir le nombre d'emplacements pour stationner son vélo ainsi que le nombre de vélo disponible ou encore les données de la position de la station. 
 
 On lance notre cluster:
 
