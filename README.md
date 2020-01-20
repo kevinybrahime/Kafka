@@ -1,10 +1,10 @@
 # Kafka
-Nous avons suivi le Tuto d'Open Classroom
+Nous avons suivi exactement le Tuto d'Open Classroom
 
 Dans un premier, nous allons voir le format des données qu'on le récupère à l'aide de cette commande : 
 Grace à cette commande, nous avons la possibilité de voir les différentes données collectées à chaque station différente. 
 
-curl https://api.jcdecaux.com/vls/v1/stations?apiKey=XXX | python -m json.tool
+curl https://api.jcdecaux.com/vls/v1/stations?apiKey=c56f0238cb88278094194fc982df9ee29f68f6b2 | python -m json.tool
 
 On peut avoir le nombre d'emplacements pour stationner son vélo ainsi que le nombre de vélo disponible ou encore les données de la position de la station. 
 
